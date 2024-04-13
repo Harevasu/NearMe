@@ -86,7 +86,6 @@ Execute the programs and publish them.
 ```
 
 ## OUTPUT
-C:\Users\harev\Desktop\NearMe\map.jpg
 
 ![alt text](map.jpg)
 
