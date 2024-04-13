@@ -1,5 +1,5 @@
 # Ex04 Places Around Me
-## Date: 
+## Date: 13/4/24
 
 ## AIM
 To develop a website to display details about the places around my house.
@@ -25,12 +25,70 @@ Write HTML programs for all the regions identified.
 Execute the programs and publish them.
 
 ## CODE
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My City</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    
+</head>
+<script>
+    function coord(event) {
+        let x =event.clientX;
+        let y =event.clientY;
+        document.getElementById("txt1").value = x;
+        document.getElementById("txt2").value = y;
+    }
+</script>
+<body>
+    <h1 align="center">
+        <font color="red"><b>THANDALAM</b></font>
+    </h1>
+    <h3 align="center">
+        <font color="blue"><b>HAREVASU S (212223230069)</b></font>
+    </h3>
+    <center>
+    <img src="map.jpg" width="1000px" usemap="#MapNew" onmousemove="coord(event)">
+    <MAP name="MapNew">
+        <AREA shape="RECT" coords="72,72,155,104" href="https://apolloartsandsciencecollege.ac.in/"
+            title="APOLLO ARTS AND SCIENCE">
+        <AREA shape="RECT" coords="50,160,130,190" href="https://www.apollocollegeofpharmacy.ac.in/"
+            title="APOLLO COLLEGE OF PHARMACY">
+        <AREA shape="RECT" coords="590,30,690,60" href="http://www.apolloengineeringcollege.ac.in/"
+            title="APOLLO ENGINEERING COLLEGE"> 
+        <AREA shape="RECT" coords="530,150,600,180" href="https://apollocollegeofeducation.ac.in/"
+            title="APOLLO COLLEGE OF EDUCTION">    
+        <AREA shape="RECT" coords="590,440,680,460" href="https://www.scad.saveetha.com/"
+            title="SAVEETHA COLLEGE OF ARCHITECTURE AND DESIGN">
+        <AREA shape="RECT" coords="680,430,770,460" href="https://www.saveetha.com/"
+            title="SAVEETHA DEEMED UNIVERSITY" > 
+        <AREA shape="RECT" coords="830,410,910,440" href="https://www.saveetha.com/"
+            title="SAVEETHA SCHOOL OF ENGINEERING">
+        <AREA shape="RECT" coords="670,500,760,530" href="https://www.saveetha.ac.in/"
+            title="SAVEETHA ENGINEERING COLLEGE"> 
+        <AREA shape="RECT" coords="740,560,830,590" href="https://www.scahs-saveetha.com/"
+            title="SAVEETHA COLLEGE OF ALLIED HEALTH SCIENCES">
+        <AREA shape="RECT" coords="750,590,830,620" href="https://www.smc.saveetha.com/"
+            title="SAVEETHA MEDICAL COLLEGE"> 
+        <AREA shape="RECT" coords="550,530,630,560" href="https://www.scon.saveetha.com/"
+            title="SAVEETHA COLLEGE OF NURSING">                      
+    </MAP><br>
+    </center>
+    X coordinate : <input type="text" name="" id="txt1"><br>
+    Y coordinate : <input type="text" name="" id="txt2">
+</body>
+</html>
+
+```
 
 ## OUTPUT
 
 
-
+![alt text](map.jpg)
 
 
 
